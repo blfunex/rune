@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rune • DEMO</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body { background: #000;}
+
+    .ribon {
+      transform:  rotate(45deg) translate(50%, 1em);
+      transition: all .3s ease-in-out;
+      transform-origin: top right;
+      font-family: monospace;
+      text-decoration: none;
+      text-align: center;
+      background: #063c88;
+      padding: 0.2rem;
+      cursor: pointer;
+      color: white;
+      width: 14rem;
+      right: 0.1rem;
+      top: 0.1rem;
+    }
+
+    .ribon:hover {
+      background: #4aaaff;
+      color: #000;
+    }
+
+    .ribon.itch {
+      transform:  rotate(45deg) translate(50%, 3em);
+      background: #97092d;
+    }
+
+    .ribon.itch:hover {
+      background: #ff4f7b;
+      color: #000;
+    }
+
+    .ribon, canvas {
+      display: block;
+      position: fixed;
+    }
+
+    canvas {
+      height: 100vh;
+      width: 100vw;
+    }
+  </style>
+</head>
+<body>
+  <main></main>
+  <a class="ribon" href="https://github.com/blfunex/rune/">RUNE</a>
+  <a class="ribon itch" href="https://aderfi.itch.io/rune/">GET IT NOW</a>
+  <script src="./bundle.js" nomodule></script>
+  <script src="./bundle.mjs" type="module"></script>
+</body>
+</html>
